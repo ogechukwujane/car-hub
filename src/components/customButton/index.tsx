@@ -6,11 +6,12 @@ export const CustomButton = ({
   title,
   containerStyle,
   handleClick,
+  btnType
 }: customButtonPrps) => {
   return (
     <button
       disabled={false}
-      type={"button"}
+      type={btnType}
       className={`custom-btn ${containerStyle}`}
       onClick={handleClick}
     >
