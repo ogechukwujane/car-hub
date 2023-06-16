@@ -5,3 +5,4 @@ export * from "./foooter";
 export * from "./searchBar";
 export * from "./customFilter";
 export * from "./searchManufacturer";
+export * from "./carCard";
