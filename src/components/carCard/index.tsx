@@ -6,6 +6,7 @@ import Image from "next/image";
 import { calculateCarRent } from "@/utils";
 import { CustomButton } from "../customButton";
 import { CarDetails } from "../carDetails";
+import { generateCarImageUrl } from "@/store";
 
 interface carCardProps {
   car: carProps;
@@ -32,7 +33,7 @@ export const CarCard = ({ car }: carCardProps) => {
 
       <div className="relative w-full h-40 my-3 object-contain">
         <Image
-          src="/hero.png"
+          src={generateCarImageUrl(car)}
           alt="card model"
           fill
           priority
